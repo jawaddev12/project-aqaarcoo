@@ -47,6 +47,7 @@
     "ngx-progressbar": "9.0.0",
     "ngx-swiper-wrapper": "10.0.0",
     "rxjs": "7.5.5",
+    "serverless-http": "^3.2.0",
     "snazzy-info-window": "1.1.1",
     "swiper": "6.6.1",
     "tslib": "2.4.0",
