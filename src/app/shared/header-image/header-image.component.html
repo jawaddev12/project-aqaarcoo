@@ -1,0 +1,44 @@
+
+<div class="header-image-wrapper" [dir]="(settings.rtl) ? 'rtl' : 'ltr'" [class.fullscreen]="fullscreen" [ngClass]="'toolbar-'+settings.toolbar">
+    <div class="bg" [style.background-image]="bgImage" [class.bg-anime]="bgImageAnimate"></div>
+    <div class="mask"></div>
+ 
+    <div class="header-image-content" fxLayout="column" fxLayoutAlign="center center" [class.offset-bottom]="contentOffsetToTop" [class.home-page]="isHomePage" [style.min-height.px]="contentMinHeight">
+      <!-- <div *ngIf="scrWidth < 700">
+
+      </div> -->
+      <h1 *ngIf="title" class="title" style=" font-family: 'Tajawal';">{{'Header.titleheader' | translate}} <span> </span>
+   
+         <span *ngIf="settings.languageto == 'ar'"> {{Language?.namearabic}}</span>
+         <span *ngIf="settings.languageto == 'en'"> {{Language?.nameenglish}}</span>
+         <span *ngIf="settings.languageto == 'tr'"> {{Language?.nameturkish}}</span>
+         <span *ngIf="settings.languageto == 'fr'"> {{Language?.namefrench}}</span>
+     
+        </h1>
+      
+      <h1 *ngFor="let count of counteqars" class="titlelength"  >({{count.eqars}})</h1> 
+        <p *ngIf="desc" class="desc">{{'Header.descheaer' | translate}}</p>
+        <div  ngClass.gt-xs="mt-4" ngClass.xs="mt-3">
+          <a mat-raised-button routerLink="/SALE" style="margin-right: 6px;">{{ 'SALE' | translate}}</a>
+          <a mat-raised-button routerLink="/RENT" style="margin-right: 6px;">{{ 'RENT' | translate }}</a> 
+          <!-- <a mat-raised-button routerLink="/askedeqars" style="margin-right: 6px;">{{ 'Wanted' | translate }}</a>  -->
+          
+          <!-- <a mat-raised-button routerLink="/dailyrent">{{ 'dailyrent' | translate }}</a>  -->
+          <a mat-raised-button routerLink="/external" style="margin-right: 6px;">{{ 'external' | translate }}</a> 
+          <a mat-raised-button routerLink="/YACHTS" style="margin-right: 6px;">{{ 'YACHTS' | translate }}</a> 
+       
+          <!-- <a mat-raised-button routerLink="/">{{ 'home' | translate }}</a>       -->
+
+        </div>
+        <br>
+        <div class="app-btn animated">
+          <a target="_blank" href="https://apps.apple.com/us/app/%D8%B9%D9%82%D8%A7%D8%B1%D9%83%D9%88-aqarco/id1612849831">
+              <img src="/assets/images/app-store-black.svg">
+          </a><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span>
+          <a target="_blank" href="https://play.google.com/store/apps/details?id=qa.aqarco.app">
+            
+              <img src="/assets/images/google-play-black.svg"></a>
+          </div>
+    </div>
+
+  </div>

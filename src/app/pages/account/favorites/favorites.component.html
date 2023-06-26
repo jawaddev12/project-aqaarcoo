@@ -1,0 +1,48 @@
+<mat-form-field appearance="outline" class="w-100">
+  <input matInput (keyup)="applyFilter($event.target.value)" placeholder="{{'Filter properties' | translate}}" autocomplete="off">
+</mat-form-field> 
+<div class="table-wrapper"> 
+    <table mat-table [dataSource]="dataSource" matSort class="w-100">
+  
+      <!-- ID Column -->
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'ID' | translate}} </th>
+        <td mat-cell *matCellDef="let property"><a [routerLink]="['/properties', property.id,property.titleAr ]" class="property-name">
+          <h2 *ngIf="settings.languageto == 'ar'" class="uppercase" ngClass.xs="text-center">{{property.titleAr}}</h2>  
+          <h2 *ngIf="settings.languageto == 'en'" class="uppercase" ngClass.xs="text-center">{{property.titleEn}}</h2>  
+          <h2 *ngIf="settings.languageto == 'tr'" class="uppercase" ngClass.xs="text-center">{{property.titleFr}}</h2>  
+          <h2 *ngIf="settings.languageto == 'fr'" class="uppercase" ngClass.xs="text-center">{{property.titleTr}}</h2> 
+          </a>
+           </td>
+      </ng-container>  
+
+      <!-- Image Column -->
+      <ng-container matColumnDef="image">
+        <th mat-header-cell *matHeaderCellDef>  {{'Image' | translate}}</th>
+        <td mat-cell *matCellDef="let property"><img [src]="property.mainphoto" [style.width.px]="100" class="d-block"></td>
+      </ng-container> 
+  
+      <!-- Title Column -->
+      <ng-container matColumnDef="title">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> {{'ID' | translate}} </th>
+        
+        <td mat-cell *matCellDef="let property">{{property.id}}</td>
+      </ng-container>  
+
+      <!-- Actions Column -->
+      <ng-container matColumnDef="actions">
+        <th mat-header-cell *matHeaderCellDef>{{'Remove' | translate}}  </th>
+        <td mat-cell *matCellDef="let property"> 
+            <button mat-icon-button color="warn" (click)="remove(property)" matTooltip="Remove" class="remove">
+                <mat-icon>delete </mat-icon>
+            </button> 
+        </td>
+      </ng-container> 
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let property; columns: displayedColumns;">
+      </tr>
+    </table> 
+    <p *ngIf="dataSource?.data.length === 0" class="py-5 mb-0 text-center">{{'No data available' | translate}}</p> 
+</div>
+<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>

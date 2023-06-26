@@ -1,0 +1,138 @@
+<mat-chip-list>
+      <mat-chip *ngIf="searchFields?.search">
+        <span > {{searchFields?.search }}</span>  
+          <mat-icon color="warn" matChipRemove (click)="remove('search')">{{'cancel' | translate}}</mat-icon>
+      </mat-chip> 
+
+     <mat-chip *ngIf="searchFields?.propertyTypenit1">
+        <span *ngIf="settings.languageto == 'en'"> {{searchFields?.propertyTypenit1.nameen }}    </span>  
+        <span *ngIf="settings.languageto == 'ar'"> {{searchFields?.propertyTypenit1.namear }}    </span>  
+        <span *ngIf="settings.languageto == 'tr'"> {{searchFields?.propertyTypenit1.nametr }}    </span>  
+        <span *ngIf="settings.languageto == 'fr'"> {{searchFields?.propertyTypenit1.namefr }}    </span>  
+   
+          <mat-icon color="warn" matChipRemove (click)="remove('propertyTypenit1')">{{'cancel' | translate}}</mat-icon>
+      </mat-chip> 
+
+      <mat-chip *ngIf="searchFields?.propertyType1">
+        <span *ngIf="settings.languageto == 'en'"> {{searchFields?.propertyType1.nameen }}    </span>  
+        <span *ngIf="settings.languageto == 'ar'"> {{searchFields?.propertyType1.namear }}    </span>  
+        <span *ngIf="settings.languageto == 'tr'"> {{searchFields?.propertyType1.nametr }}    </span>  
+        <span *ngIf="settings.languageto == 'fr'"> {{searchFields?.propertyType1.namefr }}    </span>  
+   
+          <mat-icon color="warn" matChipRemove (click)="remove('propertyType1')">{{'cancel' | translate}}</mat-icon>
+      </mat-chip> 
+
+      <mat-chip *ngIf="searchFields?.city !=null">
+        <span *ngIf="settings.languageto == 'en'">  {{searchFields?.city.englishname}}</span>
+        <span *ngIf="settings.languageto == 'ar'">  {{searchFields?.city.arabicname}}</span>
+        <span *ngIf="settings.languageto == 'tr'">  {{searchFields?.city.turkishname}}</span>
+        <span *ngIf="settings.languageto == 'fr'">  {{searchFields?.city.frenchname}}</span>
+          <mat-icon color="warn" matChipRemove (click)="remove('city')">{{'cancel' | translate}}</mat-icon>
+      </mat-chip> 
+
+
+    <mat-chip *ngIf="searchFields?.propertyType">
+      <span *ngIf="settings.languageto == 'ar'"> {{searchFields?.propertyType.arabicname }}    </span>  
+      <span *ngIf="settings.languageto == 'en'"> {{searchFields?.propertyType.englishname }}   </span>  
+      <span *ngIf="settings.languageto == 'tr'"> {{searchFields?.propertyType.turkishname }}   </span>  
+      <span *ngIf="settings.languageto == 'fr'"> {{searchFields?.propertyType.frenchname }}    </span>     
+        <mat-icon color="warn" matChipRemove (click)="remove('propertyType')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+     <!-- 
+    <mat-chip *ngIf="searchFields?.propertyStatus && searchFields?.propertyStatus.length > 0">
+        <span *ngFor="let type of searchFields?.propertyStatus; let last = last;" class="mr-1">{{type.name | translate}}<span *ngIf="!last">,</span></span>
+        <mat-icon color="warn" matChipRemove (click)="remove('propertyStatus')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+-->
+    <mat-chip *ngIf="searchFields?.price.from">
+         {{'Price' | translate }}> {{searchFields?.price.from | translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('price.from')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.price.to">
+        {{'Price' | translate}} < {{searchFields?.price.to}}
+        <mat-icon color="warn" matChipRemove (click)="remove('price.to')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+
+    <mat-chip *ngIf="searchFields?.zipCode">
+        {{searchFields?.zipCode}}
+        <mat-icon color="warn" matChipRemove (click)="remove('zipCode')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>  
+ 
+    <mat-chip *ngIf="searchFields?.neighborhood">
+        <span *ngIf="settings.languageto == 'en'"> {{searchFields?.neighborhood.englishname }}    </span>  
+        <span *ngIf="settings.languageto == 'ar'"> {{searchFields?.neighborhood.arabicname }}    </span>  
+        <span *ngIf="settings.languageto == 'tr'"> {{searchFields?.neighborhood.turkishname }}    </span>  
+        <span *ngIf="settings.languageto == 'fr'"> {{searchFields?.neighborhood.frenchname }}    </span>  
+   
+          <mat-icon color="warn" matChipRemove (click)="remove('neighborhood')">{{'cancel' | translate}}</mat-icon>
+      </mat-chip> 
+  
+
+ <!-- 
+     
+    <mat-chip *ngIf="searchFields?.neighborhood && searchFields?.neighborhood.length > 0">
+        <span *ngFor="let item of searchFields?.neighborhood; let last = last;" class="mr-1">
+          
+            <span *ngIf="settings.languageto == 'en'">  {{item.englishname}}</span>
+            <span *ngIf="settings.languageto == 'ar'">  {{item.arabicname}}</span>
+            <span *ngIf="settings.languageto == 'tr'">  {{item.turkishname}}</span>
+            <span *ngIf="settings.languageto == 'fr'">  {{item.frenchname}}</span>
+            <span *ngIf="!last">,</span></span>
+        <mat-icon color="warn" matChipRemove (click)="remove('neighborhood')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+-->
+    <mat-chip *ngIf="searchFields?.street && searchFields?.street.length > 0">
+        <span *ngFor="let item of searchFields?.street; let last = last;" class="mr-1">{{item.name}}<span *ngIf="!last">,</span></span>
+        <mat-icon color="warn" matChipRemove (click)="remove('street')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.bedrooms.from">
+        {{'Bedrooms' | translate}} > {{searchFields?.bedrooms.from| translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('bedrooms.from')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.bedrooms.to">
+        {{'Bedrooms' | translate}} < {{searchFields?.bedrooms.to| translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('bedrooms.to')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.bathrooms.from">
+        {{'Bathrooms' | translate}} > {{searchFields?.bathrooms.from| translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('bathrooms.from')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.bathrooms.to">
+        {{'Bathrooms' | translate}} < {{searchFields?.bathrooms.to| translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('bathrooms.to')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.garages.from">
+        {{'Garages' | translate}} > {{searchFields?.garages.from| translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('garages.from')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.garages.to">
+        {{'Garages' | translate}} < {{searchFields?.garages.to| translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('garages.to')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.area.from">
+        {{'Area' | translate}} > {{searchFields?.area.from | translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('area.from')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.area.to">
+        {{'Area' | translate}} < {{searchFields?.area.to | translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('area.to')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.yearBuilt.from">
+        {{'Year Built' | translate}} > {{searchFields?.yearBuilt.from | translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('yearBuilt.from')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+    <mat-chip *ngIf="searchFields?.yearBuilt.to">
+        {{'Year Built' | translate}} < {{searchFields?.yearBuilt.to | translate}}
+        <mat-icon color="warn" matChipRemove (click)="remove('yearBuilt.to')">{{'cancel' | translate}}</mat-icon>
+    </mat-chip>
+
+    <span *ngIf="searchFields?.features"> 
+        <span *ngFor="let feature of searchFields?.features; index as i">
+            <mat-chip *ngIf="feature.selected">
+                {{feature.name | translate}} 
+                <mat-icon color="warn" matChipRemove (click)="remove('features,'+i)">{{'cancel' | translate}}</mat-icon>
+            </mat-chip>
+        </span>  
+    </span>
+
+</mat-chip-list>

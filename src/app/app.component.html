@@ -1,0 +1,60 @@
+
+    
+  <!-- الواجهة الرئيسية للدول -->  
+  
+  <div  id="popup_container" *ngIf="Settingcountrykind">    
+    <div id="poup-inter" class="mb-5" style="overflow-y: scroll;" >
+       
+   <div style="text-align: center;margin: 0 auto;margin-top: 30px;" >
+     <a href="https://appaqarcoo.page.link/zXbp" class="aqarco-up" > اضغط هنا لتصفح تطبيق عقاركو  </a> 
+     <!-- <button  mat-menu-item (click)="aqarcoapp()"  class="aqarco-up"> <span>اضغط هنا لتصفح تطبيق عقاركو </span></button> -->
+    </div>
+  
+  
+  
+   <!-- language end -->
+   <!-- country -->
+       <button mat-button [matMenuTriggerFor]="country" #langMenuTrigger="matMenuTrigger" class="lang-btn">
+          <img *ngIf="settings.languageto == 'en' || settings.languageto == 'ar' || settings.languageto == 'tr' || settings.languageto == 'fr'" [src]="ContryName.flag" width="50" class="mat-elevation-z1">
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'en'">{{ContryName.nameenglish}}</span>
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'ar'">{{ContryName.namearabic}}</span>
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'tr'">{{ContryName.nameturkish}}</span>
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'fr'">{{ContryName.namefrench}}</span>
+          
+       </button>
+       <div class="row app-menu-panel lang" style="width:100%">
+         
+          <div class="col-md-3" *ngFor="let country of countries" >
+               <button  mat-menu-item (click)="changeCountry(country.id,country.defaultregion)"  style="text-align: center">  
+                 
+                  <img [src]="country.flag" width="18" [alt]="country.nameenglish" class="mat-elevation-z1"> 
+            
+                   <span class="flag-name" *ngIf="settings.languageto == 'ar'">{{country.namearabic}}</span> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'en'">{{country.nameenglish}}</span> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'tr'">{{country.nameturkish}}</span> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'fr'">{{country.namefrench}}</span> 
+               </button> 
+           </div>   
+      
+           <br><br><br><br>  
+       </div>
+       
+   
+    </div>
+   
+   </div>  
+   <!-- الواجهة الرئيسية للدول -->
+   <div id="app" class="app" [dir]="(appSettings.settings.rtl) ? 'rtl' : 'ltr'"
+               [ngClass]="[appSettings.settings.theme, 'toolbar-'+appSettings.settings.toolbar]" 
+               [class.main-toolbar-fixed]="appSettings.settings.mainToolbarFixed"> 
+       <router-outlet></router-outlet>
+       <ng-progress 
+           [spinner]="false"
+           [meteor]="false" 
+           color="#e91e63"></ng-progress>
+           
+   </div>
+   
+   
+   
+   

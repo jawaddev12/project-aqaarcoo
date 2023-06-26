@@ -1,0 +1,211 @@
+<form [formGroup]="form" class="search-wrapper" [ngClass]="'variant-'+variant">
+
+    <div [fxLayout]="(vertical) ? 'column' : 'row wrap'"> 
+
+
+        <!-- <div  fxFlex="100" fxFlex.gt-sm="10" fxFlex.sm="50" class="p-2">
+            <button type="button" class="btn btn-primary"> <i class="fas fa-search"></i></button>
+            
+        </div> -->
+        <div class="input-group rounded" style="margin-bottom: 30px;">
+            <input type="search" class="form-control rounded" pmatInput autocomplete="off" placeholder="{{'Select-search' | translate}}" formControlName="search"  />
+             <span class="input-group-text "   style="border: 0px;background-color: #fff;" >
+              <!-- <i class="fas fa-search"></i> -->
+              <button  type="button" class="btn btn-outline-primary" style="width: 20px;" (click)="sidenav.toggle()">{{ 'Search' | translate}}</button>
+  </span>
+          </div>
+          
+          <!-- hide -->   
+        <div #sidenav *ngIf="showMore" [fxLayout]="(vertical) ? 'column' : 'row wrap'" class="w-100">
+            <div *ngIf="propertycase === 1" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50" class="p-2">
+                <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                    <mat-label>{{'Property status' | translate}}</mat-label> 
+                    <mat-select placeholder="{{'Select Property Status' | translate}}" formControlName="propertyType1">
+                        <mat-option *ngFor="let propertyType1 of propertyStatus" [value]="propertyType1">
+                            <span *ngIf="settings.languageto == 'en'"> {{propertyType1.nameen  }}</span> 
+                            <span *ngIf="settings.languageto == 'ar'"> {{propertyType1.namear  }}</span> 
+                            <span *ngIf="settings.languageto == 'tr'"> {{propertyType1.nametr  }}</span> 
+                            <span *ngIf="settings.languageto == 'fr'"> {{propertyType1.namefr  }}</span> 
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+
+            <div *ngIf="propertycaseyahts === 2" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50" class="p-2">
+                <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                    <mat-label>{{'Property status' | translate}}</mat-label> 
+                    <mat-select placeholder="{{'Select Property Status' | translate}}" formControlName="propertyTypenit1">
+                        <mat-option *ngFor="let propertyTypenit1 of propertyStatusunit" [value]="propertyTypenit1">
+                            <span *ngIf="settings.languageto == 'en'"> {{propertyTypenit1.nameen  }}</span> 
+                            <span *ngIf="settings.languageto == 'ar'"> {{propertyTypenit1.namear  }}</span> 
+                            <span *ngIf="settings.languageto == 'tr'"> {{propertyTypenit1.nametr  }}</span> 
+                            <span *ngIf="settings.languageto == 'fr'"> {{propertyTypenit1.namefr  }}</span> 
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+            <div *ngIf="propertycaseyahts === 1" fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50" class="p-2">                         
+                <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                    <mat-label>{{'Property.City' | translate}}</mat-label>
+                    
+                    <mat-select placeholder="{{'Property.City' | translate}}" formControlName="city" (selectionChange)="onSelectCity($event)">
+                   
+                        
+                        <mat-option *ngFor="let city of cities" [value]="city" >
+                            <span *ngIf="settings.languageto == 'en'"> {{city.englishname }}</span>
+                           <span *ngIf="settings.languageto == 'ar'"> {{city.arabicname }}</span>
+                           <span *ngIf="settings.languageto == 'fr'"> {{city.frenchname }}</span>
+                           <span *ngIf="settings.languageto == 'tr'"> {{city.turkishname }}</span>
+                          
+                        </mat-option>
+                    </mat-select> 
+                </mat-form-field>
+            </div>
+    
+            <div  *ngIf="propertycaseyahts === 1"  fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50" class="p-2">
+                <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                    <mat-label>{{'Property Type' | translate}}</mat-label> 
+                    <!-- <mat-select placeholder="{{'Select Property Type' | translate}}" formControlName="propertyType" (selectionChange)="onSelectcat($event)"> -->
+                        <mat-select placeholder="{{'Select Property Type' | translate}}" formControlName="propertyType" >                      
+                        <mat-option *ngFor="let propertyType of arrayA" [value]="propertyType">
+                           <span *ngIf="settings.languageto == 'en'">{{propertyType.englishname}}</span> 
+                           <span *ngIf="settings.languageto == 'ar'">{{propertyType.arabicname}}</span> 
+                           <span *ngIf="settings.languageto == 'tr'">{{propertyType.turkishname}}</span> 
+                           <span *ngIf="settings.languageto == 'fr'">{{propertyType.frenchname}}</span> 
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        
+          
+            <div  fxFlex="100" fxFlex.gt-sm="25" fxFlex.sm="50" class="p-2">                         
+                <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                    <mat-label *ngIf="propertycaseyahts === 1">{{'Property.Neighborhood' | translate}}</mat-label>
+                 
+                    <mat-select  *ngIf="propertycaseyahts === 1" placeholder="{{'search.Select Neighborhood'|translate}}..." formControlName="neighborhood"  >
+                       
+                        <mat-option  *ngFor="let neighborhood of areaA " [value]="neighborhood">
+                            <span *ngIf="settings.languageto == 'en'">{{neighborhood.englishname}}</span> 
+                            <span *ngIf="settings.languageto == 'ar'">{{neighborhood.arabicname}}</span>   
+                            <span *ngIf="settings.languageto == 'fr'">{{neighborhood.frenchname}}</span>   
+                            <span *ngIf="settings.languageto == 'tr'">{{neighborhood.arabicname}}</span> 
+                        </mat-option>
+                 
+                    </mat-select> 
+                    <!-- <mat-label *ngIf="propertycaseyahts === 2">{{'Property Type' | translate}}</mat-label>
+                   
+                    <mat-select *ngIf="propertycaseyahts === 2" placeholder="{{'Select Property Type'|translate}}..." formControlName="neighborhood"  >
+               
+                        <mat-option *ngFor="let neighborhood of areaA " [value]="neighborhood">
+                            <span *ngIf="settings.languageto == 'en'">{{neighborhood.englishname}}</span> 
+                            <span *ngIf="settings.languageto == 'ar'">{{neighborhood.arabicname}}</span>   
+                            <span *ngIf="settings.languageto == 'fr'">{{neighborhood.frenchname}}</span>   
+                            <span *ngIf="settings.languageto == 'tr'">{{neighborhood.arabicname}}</span> 
+                        </mat-option>
+                
+                    </mat-select>  -->
+                </mat-form-field>
+            </div>
+
+
+            <div *ngIf="propertycaseyahts === 1" fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2" formGroupName="price">
+
+                <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                    <div fxFlex="45">
+                        <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                            <mat-label>{{'Property Price' | translate}}</mat-label>
+                            <input matInput autocomplete="off" placeholder="{{'From' | translate}}" formControlName="from" type="text" onlyNumber>                  
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="10" class="text-center" [class.pt-2]="variant == 2">
+                        <mat-icon class="text-muted">remove</mat-icon>
+                    </div>
+                    <div fxFlex="45">
+                        <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                            <mat-label>{{(variant == 1) ? '' : 'Price To'}}</mat-label>
+                            <input matInput autocomplete="off" placeholder="{{'To' | translate}}" formControlName="to" type="text" onlyNumber>                  
+                        </mat-form-field>
+                    </div>
+                </div> 
+
+            </div>          
+        
+
+
+            <div *ngIf="propertycaseyahts === 1" fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2" formGroupName="bedrooms">
+        
+                    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                        <div fxFlex="45">
+                            <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                                <mat-label>{{"Bedrooms" | translate}}</mat-label>
+                                <mat-select placeholder="{{'From' | translate}}" formControlName="from">
+                                    <mat-option *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]" [value]="number">
+                                        {{number}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div fxFlex="10" class="text-center" [class.pt-2]="variant == 2">
+                            <mat-icon class="text-muted">remove</mat-icon>
+                        </div>
+                        <div fxFlex="45">
+                            <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                            
+                                <mat-select placeholder="{{'To' | translate}}" formControlName="to">
+                                    <mat-option *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]" [value]="number">
+                                        {{number}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div> 
+        
+            </div> 
+        
+            <div *ngIf="propertycaseyahts === 1" fxFlex="100" fxFlex.gt-sm="33.3" fxFlex.sm="50" class="p-2" formGroupName="bathrooms">
+        
+                    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                        <div fxFlex="45">
+                            <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                                <mat-label>{{"Bathroom" | translate}}</mat-label>
+                                <mat-select placeholder='{{"From" | translate}}' formControlName="from">
+                                    <mat-option *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]" [value]="number">
+                                        {{number}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div fxFlex="10" class="text-center" [class.pt-2]="variant == 2">
+                            <mat-icon class="text-muted">remove</mat-icon>
+                        </div>
+                        <div fxFlex="45">
+                            <mat-form-field [appearance]="getAppearance()" [floatLabel]="getFloatLabel()">
+                                
+                                <mat-select placeholder='{{"To" | translate}}' formControlName="to">
+                                    <mat-option *ngFor="let number of [1,2,3,4,5,6,7,8,9,10]" [value]="number">
+                                        {{number}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div> 
+        
+            </div> 
+
+        </div>
+         <!-- hide end --> 
+
+
+    </div>
+  
+
+    <div fxLayout="row" fxLayoutAlign="center center" class="p-2">       
+        <button *ngIf="!vertical"   type="button" class="btn btn-outline-primary"   (click)="showMore = !showMore">{{( showMore ? 'BTN.HIDE' : 'BTN.ADVANCED' )| translate}}</button>
+      <!-- <button *ngIf="!vertical" mat-raised-button color="primary" class="btn btn-outline-primar" (click)="showMore = !showMore">
+          {{( showMore ? 'BTN.HIDE' : 'BTN.ADVANCED' )| translate}}
+        </button>       -->
+      <button *ngIf="searchOnBtnClick" mat-raised-button color="primary" class="btn btn-outline-primar" (click)="search()"><mat-icon>search</mat-icon> Search</button>
+    </div>
+    
+
+</form>

@@ -1,0 +1,1111 @@
+[
+    {
+        "id": 1,
+        "country":"QA",
+        "title": "Luxurious 6-bedroom Villa", 
+        "slug": "Luxurious 6-bedroom Villa", 
+        "slugar": "فيلا فاخرة من 6 غرف نوم", 
+        "titlear": "فيلا فاخرة من 6 غرف نوم  ", 
+        "desc": "6-bedroom villa with 2 majlis (inside and outside), room and driver room, 2 kitchen, and marbled floors.",
+        "descar":"فيلا من 6 غرف نوم مع 2 مجلس (داخل وخارج) ، غرفة خادمة وغرفة سائق ، 2 مطبخ ، وأرضيات رخامية.",
+        "propertyType": "Villas",
+        "propertyStatus": ["For Sale","For Rent"],
+        "city": "lusail",
+        "zipCode": "10033",
+        "neighborhood": ["hazm-al-markhiya"],
+        "street": ["1", "2"],
+        "location" : {
+            "lat": 25.364857914635973,
+            "lng": 51.545520306190696
+        },
+        "formattedAddress" : "330 AL HILAL WEST/ZONE 40 Building 136 /kahramaa / 1079354 first floor، Doha",
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Refrigerator", "Fireplace", "Swimming Pool", "TV Cable", "WiFi"],
+        "featured": false, 
+        "priceDollar": {
+            "sale": 1300000,
+            "rent": null
+        },
+        "priceqatar": {
+            "sale": 1160000,
+            "rent": null
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 2380,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2007,
+        "ratingsCount": 3,
+        "ratingsValue": 280,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [         
+            {
+                "small": "assets/images/props/flat-1/1-small.jpg",
+                "medium": "assets/images/props/flat-1/1-medium.jpg",
+                "big": "assets/images/props/flat-1/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/2-small.jpg",
+                "medium": "assets/images/props/flat-1/2-medium.jpg",
+                "big": "assets/images/props/flat-1/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/3-small.jpg",
+                "medium": "assets/images/props/flat-1/3-medium.jpg",
+                "big": "assets/images/props/flat-1/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-1/4-small.jpg",
+                "medium": "assets/images/props/flat-1/4-medium.jpg",
+                "big": "assets/images/props/flat-1/4-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2012-08-12 17:17:30",
+        "lastUpdate": "2019-05-20 14:20:00",
+        "views": 322
+    },
+    {
+        "id": 2,
+        "country":"Qatar",
+        "title": "Short-Term Contract, 3BR Apartment", 
+        "slug": "Short-Term Contract, 3BR Apartment", 
+        "slugar": "ِشقة في اللؤلؤة", 
+        "titlear": "شقة في اللؤلؤة", 
+        "desc": "Short-Term contract available until October 2022 only. 3 Bedroom with balcony and sea view, fully furnished apartment.",
+       "descar":"عقد قصير الأجل متاح حتى أكتوبر 2022 فقط. 3 غرف نوم مع شرفة وإطلالة على البحر، شقة مفروشة بالكامل.",
+        "propertyType": "Apartments",
+        "propertyStatus": ["For Rent"],
+        "city": "lusail",
+        "zipCode": "90044",
+        "neighborhood": ["Hollywood", "Highland Park"],
+        "street": ["Hollywood Street #2", "Highland Park Street #1"],
+        "location" : {
+            "lat": 25.364857914635973,
+            "lng": 51.545520306190696
+        },
+        "formattedAddress" : "Twenty Nine Porto Arabia, Doha",
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Refrigerator", "Fireplace", "Sauna", "TV Cable", "WiFi"], 
+        "featured": true,
+        "priceDollar": {
+            "sale": null,
+            "rent": 5800
+        },
+        "priceqatar": {
+            "sale": null,
+            "rent": 22000
+        },
+        "bedrooms": 4,
+        "bathrooms": 2,
+        "garages": 2,
+        "area": {
+            "value": 1500,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2012,
+        "ratingsCount": 4,
+        "ratingsValue": 400,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/25/16587319841.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/25/16587319841.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/25/16587319841.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665549IMG_0806.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665549IMG_0806.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665549IMG_0806.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665550IMG_0827.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665550IMG_0827.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665550IMG_0827.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665550IMG_0827.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665550IMG_0827.jpg",
+                "big": "ashttps://control.aqarcosales.com//uploudimage/2022/07/24/1658665550IMG_0827.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665553IMG_0844.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665553IMG_0844.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665553IMG_0844.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665555IMG_0854.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665555IMG_0854.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/1658665555IMG_0854.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2013-09-12 12:20:30",
+        "lastUpdate": "2019-05-20 14:20:00",
+        "views": 408
+    },
+    {
+        "id": 3,
+        "country":"Qatar",
+        "title": " New Villa in Al Wakra ", 
+        "titlear": "فيلا في الوكرة",  
+        "slug": "Brand New Villa in Al Wakra", 
+        "slugar": "فيلا-في-الوكرة", 
+        "desc": "Villa also has Outhouse Kitchen with storage room,maids and drivers room.**Other villa available,adjacent to each other",
+        "descar":"تحتوي الفيلا أيضًا على مطبخ خارجي مع غرفة تخزين وغرفة خادمات وسائقين. ** تتوفر فيلا أخرى بجوار بعضها البعض",
+        "propertyType": "Villas",
+        "propertyStatus": ["For Rent"],
+        "city": "wakra",
+        "zipCode": "98104",
+        "neighborhood": ["wakra"],
+        "street": ["1", "2"],
+        "location" : { 
+            "lat": 25.14716346776842,
+            "lng": 51.60074851534184
+        },
+        "formattedAddress" : "Al Wakrah", 
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Fireplace", "Sauna", "TV Cable", "WiFi"],
+        "featured": false, 
+        "priceDollar": {
+            "sale": 5000,
+            "rent": null
+        },
+        "priceqatar": {
+            "sale": 18000,
+            "rent": null
+        },
+        "bedrooms": 3,
+        "bathrooms": 1,
+        "garages": 1,
+        "area": {
+            "value": 2100,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2010,
+        "ratingsCount": 7,
+        "ratingsValue": 560,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [            
+            {
+                "small": "https://control.aqarcosales.com/uploudimage/2022/07/25/16587322596.jpg",
+                "medium": "https://control.aqarcosales.com/uploudimage/2022/07/25/16587322596.jpg",
+                "big": "https://control.aqarcosales.com/uploudimage/2022/07/25/16587322596.jpg"
+            },         
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586549991.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586549991.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586549991.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550002.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550002.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550002.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550024.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550024.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550024.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550045.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550045.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550045.jpg"
+            },
+            {
+                "small": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550056.jpg",
+                "medium": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550056.jpg",
+                "big": "https://control.aqarcosales.com//uploudimage/2022/07/24/16586550056.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2011-05-12 18:20:00",
+        "lastUpdate": "2019-06-18 14:20:00",
+        "views": 587
+    },
+    {
+        "id": 4,
+        
+        "country":"Qatar",
+        "title": "SF Studio in Fox Hills Lusail", 
+        "titlear": "شقة استوديو شبه مؤثثة في فوكس هيلز لوسيل ",
+        "slug": "Spacious-and-warm-flat", 
+        "slugar": "شقة استوديو شبه مؤثثة في فوكس هيلز لوسيل", 
+        "desc": "Semi-furnished studio apartment with balcony.",
+        "descar":"شقة استوديو شبه مفروشة مع شرفة.",
+        "propertyType": "Apartment",
+        "propertyStatus": ["For Sale"],
+        "city": "lusail",
+        "zipCode": "60604",
+        "neighborhood": ["Riverdale"],
+        "street": ["Riverdale Street #1"],
+        "location" : {
+            "lat": 25.426239309876184,
+            "lng": 51.49957244195285
+        },
+        "formattedAddress": "CFGX+9QQ, Unnamed Road, Lusail", 
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Fireplace", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": 242000,
+            "rent": null
+        },
+        "priceqatar": {
+            "sale": 850000,
+            "rent": null
+        },
+        "bedrooms": 5,
+        "bathrooms": 2,
+        "garages": 2,
+        "area": {
+            "value": 1700,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2002,
+        "ratingsCount": 3,
+        "ratingsValue": 220,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/flat-2/1-small.jpg",
+                "medium": "assets/images/props/flat-2/1-medium.jpg",
+                "big": "assets/images/props/flat-2/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/2-small.jpg",
+                "medium": "assets/images/props/flat-2/2-medium.jpg",
+                "big": "assets/images/props/flat-2/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/3-small.jpg",
+                "medium": "assets/images/props/flat-2/3-medium.jpg",
+                "big": "assets/images/props/flat-2/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/4-small.jpg",
+                "medium": "assets/images/props/flat-2/4-medium.jpg",
+                "big": "assets/images/props/flat-2/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/flat-2/5-small.jpg",
+                "medium": "assets/images/props/flat-2/5-medium.jpg",
+                "big": "assets/images/props/flat-2/5-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2016-10-12 18:20:00",
+        "lastUpdate": "2019-06-11 14:20:00",
+        "views": 754
+    },
+    {
+        "id": 5,
+        "country":"turkey",
+        "title": "House with a pool", 
+        "titlear": "منزل مع مسبح",
+        "slug": "5Modern-and-quirky-flat", 
+        "slugar": "5طابق-علوي-جميل", 
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+        "propertyType": "House",
+        "propertyStatus": ["For Sale"],
+        "city": "Istanbul",
+        "zipCode": "98108",
+        "neighborhood": ["Ortakoy", "Belltown"],
+        "street": ["Queen Anne Street #1", "Belltown Street #2"],
+        "location" : {
+            "lat": 47.603230,
+            "lng": -122.330276
+        },
+        "formattedAddress": "5921 17th Ave S, Seattle, WA 98108, USA", 
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": 4500000,
+            "rent": null
+        },
+        "priceqatar": {
+            "sale": 4020000,
+            "rent": null
+        },
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "garages": 1,
+        "area": {
+            "value": 2200,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2007,
+        "ratingsCount": 6,
+        "ratingsValue": 480,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/house-3/1-small.jpg",
+                "medium": "assets/images/props/house-3/1-medium.jpg",
+                "big": "assets/images/props/house-3/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-3/2-small.jpg",
+                "medium": "assets/images/props/house-3/2-medium.jpg",
+                "big": "assets/images/props/house-3/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-3/3-small.jpg",
+                "medium": "assets/images/props/house-3/3-medium.jpg",
+                "big": "assets/images/props/house-3/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-3/4-small.jpg",
+                "medium": "assets/images/props/house-3/4-medium.jpg",
+                "big": "assets/images/props/house-3/4-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2017-11-20 10:20:00",
+        "lastUpdate": "2019-04-14 14:20:00",
+        "views": 633
+    },
+    {
+        "id": 6,
+        "country":"turkey",
+        "title": "Bright and sunny house", 
+        "titlear": " منزل مشمش  ",
+        "slug": "6Modern-and-quirky-flat", 
+        "slugar": "6طابق-علوي-جميل", 
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+        "propertyType": "House",
+        "propertyStatus": ["For Rent"],
+        "city": "Istanbul",
+        "zipCode": "60609",
+        "neighborhood": ["Balat", "Austin"],
+        "street": ["Englewood Street #2", "Austin Street #2"],
+        "location" : {
+            "lat": 41.814080,
+            "lng": -87.660410
+        },
+        "formattedAddress": "1400 W 44th St, Chicago, IL 60609, USA", 
+        "features": ["Refrigerator", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": null,
+            "rent": 9000
+        },
+        "priceqatar": {
+            "sale": null,
+            "rent": 8000
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 1600,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2017,
+        "ratingsCount": 5,
+        "ratingsValue": 400,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/house-2/1-small.jpg",
+                "medium": "assets/images/props/house-2/1-medium.jpg",
+                "big": "assets/images/props/house-2/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-2/2-small.jpg",
+                "medium": "assets/images/props/house-2/2-medium.jpg",
+                "big": "assets/images/props/house-2/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-2/3-small.jpg",
+                "medium": "assets/images/props/house-2/3-medium.jpg",
+                "big": "assets/images/props/house-2/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/house-2/4-small.jpg",
+                "medium": "assets/images/props/house-2/4-medium.jpg",
+                "big": "assets/images/props/house-2/4-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2013-11-19 18:20:00",
+        "lastUpdate": "2019-06-08 14:20:00",
+        "views": 256
+    },
+    {
+        "id": 7,
+        "country":"turkey",
+        "title": "Luxury office space", 
+        "titlear": "مساحات مكتبية فاخرة",
+        "slug": "7Modern-and-quirky-flat", 
+        "slugar": "7طابق-علوي-جميل", 
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+        "propertyType": "Office",
+        "propertyStatus": ["For Sale"],
+        "city": "Hatay",
+        "zipCode": "10019",
+        "neighborhood": ["Englewood", "Austin"],
+        "street": ["Antakey", "Austin Street #2"],
+        "location" : {
+            "lat": 40.716761,
+            "lng": -73.999958
+        },
+        "formattedAddress": "230 W 55th St, New York, NY 10019, USA", 
+        "features": ["Air Conditioning", "Barbeque", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": false, 
+        "priceDollar": {
+            "sale": 2500000,
+            "rent": null
+        },
+        "priceqatar": {
+            "sale": 2200000,
+            "rent": null
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 3200,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2017,
+        "ratingsCount": 7,
+        "ratingsValue": 700,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/office-2/1-small.jpg",
+                "medium": "assets/images/props/office-2/1-medium.jpg",
+                "big": "assets/images/props/office-2/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/2-small.jpg",
+                "medium": "assets/images/props/office-2/2-medium.jpg",
+                "big": "assets/images/props/office-2/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/3-small.jpg",
+                "medium": "assets/images/props/office-2/3-medium.jpg",
+                "big": "assets/images/props/office-2/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/4-small.jpg",
+                "medium": "assets/images/props/office-2/4-medium.jpg",
+                "big": "assets/images/props/office-2/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/5-small.jpg",
+                "medium": "assets/images/props/office-2/5-medium.jpg",
+                "big": "assets/images/props/office-2/5-big.jpg"
+            },
+            {
+                "small": "assets/images/props/office-2/6-small.jpg",
+                "medium": "assets/images/props/office-2/6-medium.jpg",
+                "big": "assets/images/props/office-2/6-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2017-08-12 18:20:00",
+        "lastUpdate": "2019-03-29 14:20:00",
+        "views": 470
+    },
+    {
+        "id": 8,
+        "country":"turkey",
+        "title": "Centrally located apartment", 
+        "titlear": "شقة بموقع مركزي",
+        "slug": "8Modern-and-quirky-flat", 
+        "slugar": "8طابق-علوي-جميل", 
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+        "propertyType": "Apartment",
+        "propertyStatus": ["For Rent"],
+        "city": "Hatay",
+        "zipCode": "90028",
+        "neighborhood": ["Rehanli", "Austin"],
+        "street": ["Englewood Street #2", "Austin Street #2"],
+        "location" : {
+            "lat": 34.100570,
+            "lng": -118.327440
+        },
+        "formattedAddress": "1627 Vine St, Los Angeles, CA 90028, USA", 
+        "features": ["Air Conditioning", "Refrigerator", "Dryer", "Microwave", "Gym", "Swimming Pool", "Sauna", "TV Cable", "WiFi"],
+        "featured": true, 
+        "priceDollar": {
+            "sale": null,
+            "rent": 5600
+        },
+        "priceqatar": {
+            "sale": null,
+            "rent": 5000
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "garages": 1,
+        "area": {
+            "value": 1600,
+            "unit": "ft²"
+        },
+        "yearBuilt": 2017,
+        "ratingsCount": 4,
+        "ratingsValue": 380,
+        "additionalFeatures": [                
+            {
+                "name": "Heat",
+                "value": "Natural Gas"
+            },
+            {
+                "name": "Roof",
+                "value": "Composition/Shingle"
+            },
+            {
+                "name": "Floors",
+                "value": "Wall-to-Wall Carpet"
+            },
+            {
+                "name": "Water",
+                "value": "District/Public"
+            },
+            {
+                "name": "Cross Streets",
+                "value": "Orangethorpe-Gilbert"
+            },
+            {
+                "name": "Windows",
+                "value": "Skylights"
+            },
+            {
+                "name": "Flat",
+                "value": "5"
+            },
+            {
+                "name": "Childroom",
+                "value": "2"
+            }
+        ],
+        "gallery": [
+            {
+                "small": "assets/images/props/apartment/1-small.jpg",
+                "medium": "assets/images/props/apartment/1-medium.jpg",
+                "big": "assets/images/props/apartment/1-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/2-small.jpg",
+                "medium": "assets/images/props/apartment/2-medium.jpg",
+                "big": "assets/images/props/apartment/2-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/3-small.jpg",
+                "medium": "assets/images/props/apartment/3-medium.jpg",
+                "big": "assets/images/props/apartment/3-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/4-small.jpg",
+                "medium": "assets/images/props/apartment/4-medium.jpg",
+                "big": "assets/images/props/apartment/4-big.jpg"
+            },
+            {
+                "small": "assets/images/props/apartment/5-small.jpg",
+                "medium": "assets/images/props/apartment/5-medium.jpg",
+                "big": "assets/images/props/apartment/5-big.jpg"
+            }
+        ],
+        "plans": [
+            {
+                "name": "First floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1180,
+                    "unit": "ft²"
+                },
+                "rooms": 3,
+                "baths": 1,
+                "image": "assets/images/others/plan-1.jpg"
+            },
+            {
+                "name": "Second floor",
+                "desc": "Plan description. Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium magnam veniam sit reprehenderit deserunt ad voluptates id aperiam veritatis! Nobis saepe quos eveniet numquam vitae quis, tenetur consectetur impedit dolore.",
+                "area": {
+                    "value": 1200,
+                    "unit": "ft²"
+                },
+                "rooms": 5,
+                "baths": 2,
+                "image": "assets/images/others/plan-2.jpg"
+            }
+        ],
+        "videos": [
+            {
+                "name": "Video",
+                "link": "http://themeseason.com/data/videos/video-1.mp4"
+            },
+            {
+                "name": "Video with 'ngx-embed-video' plugin",
+                "link": "https://www.youtube.com/watch?v=-NInBEdSvp8"
+            }
+        ],
+        "published": "2016-03-29 05:20:00",
+        "lastUpdate": "2019-06-26 14:20:00",
+        "views": 852
+    }    
+]

@@ -1,0 +1,88 @@
+<title *ngIf="settings.languageto == 'en'" >aqarco for real estate e-marketing</title>
+<title  *ngIf="settings.languageto == 'ar'"  > عقاركو تسويق الكتروني للعقارات</title>
+<title  *ngIf="settings.languageto == 'tr'"  >aqarco emlak e-pazarlama için</title>
+<title  *ngIf="settings.languageto == 'fr'"  >aqarco for real estate e-marketing</title>
+<app-header-image [backgroundImage]="'assets/images/others/contact.jpg'" 
+                  [bgImageAnimate]="false" 
+                  [contentOffsetToTop]="true"                
+                  [title]="'Contact Us'"
+                  [desc]="'Got a question? We\'ll give you straight answer'">
+</app-header-image>
+
+<div class="px-3">
+
+    <div class="theme-container">
+        <mat-card class="main-content-header mb-5">
+            
+            <div fxLayout="row wrap" fxLayoutAlign="space-around">
+                <div fxFlex="100" fxFlex.gt-xs="33.3">
+                    <div fxLayout="column" fxLayoutAlign="center center" class="text-center">
+                        <mat-icon color="primary" class="mat-icon-lg">home</mat-icon>
+                        <h3 class="primary-color py-1">{{'contact.ADDRESS' | translate}} :</h3>
+                        <span>330 AL HILAL WEST/ZONE 40 Building 136 /kahramaa / 1079354 first floor، Doha, Qatar</span>
+                    </div>
+                </div>
+                <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
+                    <div fxLayout="column" fxLayoutAlign="center center">
+                        <mat-icon color="primary" class="mat-icon-lg">call</mat-icon>
+                        <h3 class="primary-color py-1"> {{'contact.PHONES' | translate}}:</h3>
+                        <span style="direction:ltr  ;" >+974 40020040</span>
+                    </div>
+                </div>
+                <div fxFlex="100" fxFlex.gt-xs="33.3" ngClass.xs="mt-2">
+                    <div fxLayout="column" fxLayoutAlign="center center">
+                        <mat-icon color="primary" class="mat-icon-lg">mail_outline</mat-icon>
+                        <h3 class="primary-color py-1">{{'contact.E-MAIL' | translate}} :</h3>
+                        <span>info@aqarco.qa</span>
+
+                    </div>
+                </div>
+                <div class="divider w-100 mt-3"></div>
+               <!-- 
+                <h3 class="w-100 text-center py-3">CONTACT US</h3>
+                
+                <form [formGroup]="contactForm" (ngSubmit)="onContactFormSubmit(contactForm.value)" fxLayout="row wrap">
+                    <div fxFlex="100" fxFlex.gt-sm="33.3" class="px-1" ngClass.sm="mt-1" ngClass.xs="mt-1">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Name</mat-label>
+                            <input matInput placeholder="Name" formControlName="name" required>
+                            <mat-error *ngIf="contactForm.controls.name.errors?.required">Name is required</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="100" fxFlex.gt-sm="33.3" class="px-1" ngClass.sm="mt-1" ngClass.xs="mt-1">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Email</mat-label>
+                            <input matInput placeholder="Email" formControlName="email" required>
+                            <mat-error *ngIf="contactForm.controls.email.errors?.required">Email is required</mat-error>
+                            <mat-error *ngIf="contactForm.controls.email.hasError('invalidEmail')">Invalid email address</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="100" fxFlex.gt-sm="33.3" class="px-1" ngClass.sm="mt-1" ngClass.xs="mt-1">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Phone</mat-label>
+                            <input matInput placeholder="Phone" formControlName="phone" required>
+                            <mat-error *ngIf="contactForm.controls.phone.errors?.required">Phone is required</mat-error>
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="100" class="px-1 mt-1">
+                        <mat-form-field appearance="outline" class="w-100">
+                            <mat-label>Message</mat-label> 
+                            <textarea matInput placeholder="Message" formControlName="message" required rows="7"></textarea> 
+                            <mat-error *ngIf="contactForm.controls.message.errors?.required">Message is required</mat-error>
+                        </mat-form-field>
+                    </div> 
+                    <div class="w-100 py-2 text-center">
+                        <button mat-raised-button color="primary" type="submit" class="uppercase">Submit</button>
+                    </div> 
+                </form> 
+            --> 
+            </div> 
+            
+            <div class="mt-5 contact-map" style="text-align:center;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.325689439525!2d51.52179351496314!3d25.259627183867238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45cf0136770487%3A0x1f168d5f4fbc9f2b!2zQVFBUkNPLyDYudmC2KfYsdmD2Yg!5e0!3m2!1sen!2sqa!4v1668323935116!5m2!1sen!2sqa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </mat-card>  
+    </div>
+
+</div>

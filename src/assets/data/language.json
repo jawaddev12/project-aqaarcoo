@@ -1,0 +1,50 @@
+[
+    {
+    "id": 1,
+    "name": "Arabic",
+    "arabic": 1,
+    "english": 0,
+    "turkish": 0,
+    "french": 0,
+    "short": "ar",
+    "countryid": 1,
+    "firstlang":true
+   
+},
+{
+    "id": 2,
+    "name": "English",
+    "arabic": 0,
+    "english": 1,
+    "turkish": 0,
+    "french": 0,
+    "short": "en",
+    "countryid": 1,
+    "firstlang":false
+   
+},
+{
+    "id": 3,
+    "name": "Turkish",
+    "arabic": 0,
+    "english": 0,
+    "turkish": 1,
+    "french": 0,
+    "short": "tr",
+    "countryid": 8,
+    "firstlang":true
+   
+},
+{
+    "id": 4,
+    "name": "franch",
+    "arabic": 0,
+    "english": 0,
+    "turkish": 0,
+    "french": 1,
+    "short": "fr",
+    "countryid": 8,
+    "firstlang":false
+   
+}
+]

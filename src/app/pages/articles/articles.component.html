@@ -1,0 +1,66 @@
+ <!-- arabic  -------------------------------------------  -->
+ <title *ngIf="settings.languageto == 'en'" >aqarco for real estate e-marketing</title>
+<title  *ngIf="settings.languageto == 'ar'"  > عقاركو تسويق الكتروني للعقارات</title>
+<title  *ngIf="settings.languageto == 'tr'"  >aqarco emlak e-pazarlama için</title>
+<title  *ngIf="settings.languageto == 'fr'"  >aqarco for real estate e-marketing</title>
+ <div *ngIf="settings.languageto == 'ar'"  class="row  p-2" ngClass.xs="text-center">
+  <div class="col-md-6 col-lg-3 col-sm-12 col-ms-12 p-2" *ngFor="let item of articalsar">
+    <a class="card-adress" routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div class="title" style="height:50px;text-align: center;padding: 2px;"><h1 style="color:#000">{{item.title1}}</h1></div>
+    </a>
+    <a routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+    <div>
+     <img src="{{item.img1}}" alt="" style="width:100% ">
+    </div>
+    </a>
+   
+  </div>
+ </div>
+ <!-- english  -------------------------------------------  -->
+ <div *ngIf="settings.languageto == 'en'"  class="row  p-2" ngClass.xs="text-center">
+  <div class="col-md-6 col-lg-3 col-sm-12 col-ms-12 p-5" *ngFor="let item of articalsen">
+    <a class="card-adress" routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div class="title" style="height:50px;text-align: center;padding: 2px;"><h1 style="color:#000">{{item.title1}}</h1></div>
+      </a>
+      <a routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div>
+       <img src="{{item.img1}}" alt="" style="width:100% ">
+      </div>
+      </a>
+
+  </div>
+ </div>
+  <!-- turkish  -------------------------------------------  -->
+ <div *ngIf="settings.languageto == 'tr'"  class="row  p-2" ngClass.xs="text-center">
+  <div class="col-md-6 col-lg-3 col-sm-12 col-ms-12 p-2" *ngFor="let item of articalstr">
+    <a class="card-adress" routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div class="title" style="height:50px;text-align: center;padding: 2px;"><h1 style="color:#000">{{item.title1}}</h1></div>
+      </a>
+      <a routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div>
+       <img src="{{item.img1}}" alt="" style="width:100% ">
+      </div>
+      </a>
+   
+  </div>
+ </div>
+  <!-- franch  -------------------------------------------  -->
+ <div *ngIf="settings.languageto == 'fr'"  class="row  p-2" ngClass.xs="text-center">
+  <div class="col-md-6 col-lg-3 col-sm-12 col-ms-12 p-2" *ngFor="let item of articalsfr">
+    <a class="card-adress" routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div class="title" style="height:50px;text-align: center;padding: 2px;"><h1 style="color:#000">{{item.title1}}</h1></div>
+      </a>
+      <a routerLink="/artical/{{item.id}}/{{item.title1.replaceAll(' ', '-')}}">
+      <div>
+       <img src="{{item.img1}}" alt="" style="width:100% ">
+      </div>
+      </a>
+ 
+  </div>
+ </div>
+
+
+
+   
+
+

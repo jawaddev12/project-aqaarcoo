@@ -1,0 +1,144 @@
+<title *ngIf="settings.languageto == 'en'" >aqarco for real estate e-marketing</title>
+<title  *ngIf="settings.languageto == 'ar'"  > عقاركو تسويق الكتروني للعقارات</title>
+<title  *ngIf="settings.languageto == 'tr'"  >aqarco emlak e-pazarlama için</title>
+<title  *ngIf="settings.languageto == 'fr'"  >aqarco for real estate e-marketing</title>
+<app-header-image [backgroundImage]="'assets/images/carousel/slide-3.jpg'" 
+                  [bgImageAnimate]="false" 
+                  [contentOffsetToTop]="false" 
+                  [desc]="'“Home is where one starts from...” –T.S. Eliot'"
+                  [contentMinHeight]="200">
+        
+</app-header-image>
+
+<div class="px-3"> 
+    
+  <div class="theme-container">  
+
+    <mat-sidenav-container class="all-properties mt-3"> 
+      <!-- <mat-sidenav #sidenav [autoFocus]="false" [opened]="sidenavOpen" [mode]="sidenavOpen ? 'side' : 'over'" class="search-sidenav">         
+        <mat-card [perfectScrollbar]="psConfig"> 
+          <button fxHide="false" fxHide.gt-xs mat-icon-button (click)="sidenav.toggle()">
+              <mat-icon color="accent">search</mat-icon>
+          </button>
+          <button fxHide="false" fxHide.gt-xs mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon color="accent">close</mat-icon>
+        </button>
+          <app-properties-search 
+              [variant]="settings.searchPanelVariant"
+              [vertical]="true"
+              [propertycase]=0
+              [searchOnBtnClick]="settings.searchOnBtnClick"              
+              [removedSearchField]="removedSearchField" 
+              (onSearchChange)="searchChanged($event)"
+              (onSearchClick)="searchClicked()">
+          </app-properties-search>
+        </mat-card> 
+      </mat-sidenav> -->
+
+      <mat-sidenav-content ngClass.gt-sm="distance"> 
+
+        <div fxLayout="row wrap" class="properties-wrapper mt-0">
+            <div class="theme-container">
+                
+                <mat-card class="main-content-header">
+        
+                    <app-properties-search 
+                        [variant]="settings.searchPanelVariant"
+                        [searchOnBtnClick]="settings.searchOnBtnClick"
+                        [removedSearchField]="removedSearchField" 
+                        (onSearchChange)="searchChanged($event)"
+                        (onSearchClick)="searchClicked()">
+                    </app-properties-search>
+                    
+                </mat-card>  
+            
+            </div>            
+           
+            <div fxFlex="100" class="px-2 pb-2 pt-0">                
+
+            </div>
+           
+            <div fxFlex="100" fxLayoutAlign="start start" class="p-2"> 
+                <!--
+                <mat-chip-list [ngClass]="(settings.rtl) ? 'ml-2' : 'mr-2'">
+                    <mat-chip selected disableRipple="true" color="warn" class="uppercase ws-nowrap">
+                        {{ pagination?.total }}  {{'found' | translate}}
+                    </mat-chip> 
+                </mat-chip-list>
+            -->
+                <app-properties-search-results-filters 
+                    [searchFields]="searchFields" 
+                    (onRemoveSearchField)="removeSearchField($event)">
+                </app-properties-search-results-filters>                 
+            </div>
+          <!-- property -->
+          <div *ngIf="properties?.length == null" fxFlex="100" fxLayoutAlign="center center" [style.min-height.px]="200">                
+            <div style="margin: 100px;"><mat-spinner ></mat-spinner></div>
+
+        </div>
+            <div *ngFor="let property of properties" [fxFlex]="(viewType=='list') ? viewCol : 100"  class="item">                         
+                <div fxFlex="100" fxShrink="3" [fxFlex.gt-sm]="(viewType=='list') ? 40 : 100" [fxFlex.sm]="(viewType=='list') ? 50 : 100" class="thumbnail-section">
+                    <h6 class="adress" ><span>{{property.type | translate}}</span></h6> 
+                </div>
+                <div fxFlex="100" [fxFlex.gt-sm]="(viewType=='list') ? 60 : 100" [fxFlex.sm]="(viewType=='list') ? 50 : 100" class="p-3">
+                    <div fxLayout="column" fxLayoutAlign="start stretch" class="h-100">
+                        <mat-card-content class="mb-0">
+                            <h1 *ngIf="settings.languageto == 'ar'" class="title">{{property.titleAr }}</h1>
+                            <h1 *ngIf="settings.languageto == 'en'" class="title">{{property.titleEn}}</h1>
+                            <h1 *ngIf="settings.languageto == 'tr'" class="title">{{property.titleTr}}</h1>
+                            <h1 *ngIf="settings.languageto == 'fr'" class="title">{{property.titleFr}}</h1>
+                            <div class="features mt-3"> 
+                                <h4 *ngIf="settings.languageto == 'ar'" class="titledes">{{property.descrAr }}</h4>
+                                <h4 *ngIf="settings.languageto == 'en'" class="titledes">{{property.descrEn}}</h4>
+                                <h4 *ngIf="settings.languageto == 'tr'" class="titledes">{{property.descrTr}}</h4>
+                                <h4 *ngIf="settings.languageto == 'fr'"class="titledes" >{{property.descrFr}}</h4>  
+                            </div>
+                            <div class="features mt-3">  
+
+            
+                                <div class="col-md-12 col-lg-12 col-sm-12 col-12 d-flex flex-row sochial text-center  " >
+                                    <div class="p-1"><a href="tel:{{property.phone}}"><i class="fa fa-phone" aria-hidden="true"></i></a></div>
+
+                                    <div class="p-1"> <a href="https://api.whatsapp.com/send?phone={{property.whatsapp}}&text={{property.titleEn}}"  target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+                                    
+                                </div>                 
+                              
+                            <!--     <p><span><i class='fa fa-car'></i></span><span>{{property.garages}}</span></p>-->
+                            </div> 
+                        </mat-card-content>
+                    </div>        
+                </div> 
+                
+            </div>
+            <!-- property end -->
+            <div *ngIf="properties?.length && result!=0 " fxFlex="100" fxLayoutAlign="center center" class="p-2 mt-2">                
+             
+                <div id="load-more">
+                    <div *ngIf="!settings.loadMore.complete">
+                        <div style="margin: 30px;"><button *ngIf="!settings.loadMore.start && getproperty.length > 25" mat-raised-button color="primary" (click)="startLoad()" class="uppercase">{{'Load More'| translate}}</button></div>
+                        <div style="margin: 100px;">   <mat-spinner *ngIf="settings.loadMore.start "></mat-spinner> </div>
+                    </div>
+                    <!-- <mat-chip-list *ngIf="settings.loadMore.complete">
+                        <mat-chip selected disableRipple="true" color="warn" class="uppercase ws-nowrap">
+                            {{settings.loadMore.result}} {{'results' | translate}}
+                        </mat-chip> 
+                    </mat-chip-list> -->
+                  </div>
+            </div>      
+         
+        </div>
+
+        
+
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+  </div>
+
+</div>
+
+
+
+<!-- <app-clients></app-clients> -->
+
+<app-get-in-touch></app-get-in-touch>

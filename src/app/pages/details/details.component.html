@@ -1,0 +1,262 @@
+
+
+<div  id="popup_container" *ngIf="firsttimetodetails != 'on' " >    
+    <div id="poup-inter" class="mb-5" style="overflow-y: scroll;" >
+       
+   <div style="text-align: center;margin: 0 auto;margin-top: 30px;" >
+      <button   (click)="goapp()" class="btn btn-primary" >  
+                 
+        <span> تصفح الإعلان من خلال التطبيق </span>
+                 </button> 
+ 
+    </div>
+    <div style="text-align: center;margin: 0 auto;margin-top: 30px;" >
+        <button  (click)="goweb()" class="btn btn-primary"   >  
+                 
+<span>العودة للموقع</span>
+         </button> 
+         </div>
+   
+    </div>
+   
+   </div> 
+
+<!-- <link rel="image_src" href="https://lh3.googleusercontent.com/p/AF1QipNHYyewkzNyRaF9j1UudbYis5QcX9DRSt63Vxfu=s1360-w1360-h1020" />
+<meta property="og:url"           content="{{newURL}}" />
+<meta property="og:type"          content="article" /> -->
+
+<!-- <meta  *ngIf="settings.languageto == 'en'" property="og:title" content="{{property?.titleEn}}" />
+<meta  *ngIf="settings.languageto == 'ar'" property="og:title" content="{{property?.titleAr}}" />
+<meta  *ngIf="settings.languageto == 'tr'" property="og:title" content="{{property?.titleTr}}" />
+<meta  *ngIf="settings.languageto == 'fr'" property="og:title" content="{{property?.titleFr}}" /> -->
+
+<!-- <meta property="og:image" content="{{property?.mainphoto}}" />
+<meta property="og:image:width" content="1067">
+<meta property="og:image:height" content="600">
+
+<meta *ngIf="settings.languageto == 'en'"  property="og:description" content="aqarcoo is an online real estate marketing company, rent apartments, daily rent, rent in Doha, rent in Qatar, rent the World Cup, sell apartments, hotels, Qatar hotels, Doha hotels, World Cup hotels, rent caravans, rent furnished rooms, restaurants in Doha, restaurants in Qatar, Doha metro, Qatar metro, tourism in Qatar and Doha, chalets in Qatar, hotels in Qatar and Doha Renting villas in Doha Renting a furnished studio in Qatar and Doha" />
+<meta *ngIf="settings.languageto == 'ar'"  property="og:description" content="عقاركو شركة تسويق الكتروني للعقارات تأجير شقق تأجير يومي تأجير في الدوحة تأجير في قطر تأجير كأس العالم بيع شقق فنادق قطر فنادق الدوحة فنادق كاس العالم تأجير كرنفانات تأجير غرف مفروشة مطاعم في الدوحة مطاعم في قطر مترو الدوحة مترو قطرالسياحة في قطر والدوحة الشاليهات في قطر الفنادق في قطر والدوحة تأجير فلل في الدوحة تأجير ستديو مفروش في قطر والدوحة " />
+<meta *ngIf="settings.languageto == 'tr'"  property="og:description" content="aqarcoo emlak e-pazarlama için Türkiye'de gayrimenkulün online pazarlanması için  Villalar, apartmanlar, konut odaları, genç konutları, otel odaları, kiralık ev, apartmanlar, kiralık odalar, apartmanlar, satış, villalar, gayrimenkul alım satımı, dükkanlar, arsalar, stüdyolar, konut ve ticari binalar Mobilyalı daireler Satılık ve kiralık mobilyalı odalar." />
+<meta *ngIf="settings.languageto == 'fr'"  property="og:description" content="aqarcoo is an online real estate marketing company, rent apartments, daily rent, rent in Doha, rent in Qatar, rent the World Cup, sell apartments, hotels, Qatar hotels, Doha hotels, World Cup hotels, rent caravans, rent furnished rooms, restaurants in Doha, restaurants in Qatar, Doha metro, Qatar metro, tourism in Qatar and Doha, chalets in Qatar, hotels in Qatar and Doha Renting villas in Doha Renting a furnished studio in Qatar and Doha" />
+
+<meta *ngIf="settings.languageto == 'en'"  property="og:site_name" content="aqarcoo for real estate e-marketing">
+<meta *ngIf="settings.languageto == 'ar'"  property="og:site_name" content="عقاركو للتسويق الإلكتروني للعقارات">
+<meta *ngIf="settings.languageto == 'tr'"  property="og:site_name" content="aqarcoo emlak e-pazarlama için">
+<meta *ngIf="settings.languageto == 'fr'"  property="og:site_name" content="aqarcoo for real estate e-marketing"> -->
+<div class="px-3">     
+    <div class="theme-container"> 
+        <mat-sidenav-container class="single-property mt-3">           
+            <mat-sidenav-content ngClass.gt-sm="distance">
+                <div class="row">
+                     <!-- ألقسم الايمن  -->
+                    <div class="col-md-8">
+
+
+                        <mat-card class="mt-3">
+                            <div class="main-carousel mb-3"> 
+                                
+                                <div *ngIf="property" class="control-icons">
+                                    <button mat-button [disabled]="onFavorites()" (click)="addToFavorites()" matTooltip="Add To Favorite">
+                                        <mat-icon class="">favorite_border</mat-icon>
+                                    </button>
+
+                                </div>
+
+                                <div id="main-carousel" class="swiper-container" [swiper]="config" (indexChange)="onIndexChange($event)"> 
+                                    <div class="swiper-wrapper"> 
+                                        <div  class="swiper-slide">
+                                            
+                                            <a href="{{property?.mainphoto}}" rel='lightbox' data-lightbox='roadtrip'  class="img-fluid" alt="slider-listing"> <img [src]="property.mainphoto" class="swiper-lazy example-image" alt="{{property.titleAr }}" title="{{property.titleAr }}" style="width:100%;height:100%"></a>
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div> 
+                                        <div *ngFor="let image of Photos" class="swiper-slide">
+                                            <a href="{{image.img}}" rel='lightbox' data-lightbox='roadtrip'  class="img-fluid" alt="slider-listing"> <img [attr.data-src]="image.img" alt="{{property.titleAr }}" title="{{property.titleAr }}" class="swiper-lazy example-image" style="width:100%;height:100%"></a>
+                                            <div class="swiper-lazy-preloader"></div>
+                                        </div> 
+                                    </div>                    
+                                    <button mat-mini-fab color="primary" class="swiper-button-prev swipe-arrow"><mat-icon>keyboard_arrow_left</mat-icon></button>
+                                    <button mat-mini-fab color="primary" class="swiper-button-next swipe-arrow"><mat-icon>keyboard_arrow_right</mat-icon></button> 
+                                </div>
+
+                            </div>
+                        </mat-card> 
+                        <mat-card fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center">             
+                            <div>
+            
+                                <h1 *ngIf="settings.languageto == 'ar'" class="uppercase" ngClass.xs="text-center" >{{property?.titleAr}}</h1>
+                                <h1 *ngIf="settings.languageto == 'en'" class="uppercase" ngClass.xs="text-center">{{property?.titleEn}}</h1>
+                                <h1 *ngIf="settings.languageto == 'tr'" class="uppercase" ngClass.xs="text-center">{{property?.titleTr}}</h1>
+                                <h1 *ngIf="settings.languageto == 'fr'" class="uppercase" ngClass.xs="text-center">{{property?.titleFr}}</h1>
+                            <!--   
+                                <p fxLayout="row" fxLayoutAlign.xs="center" class="address mb-0">
+                                    <mat-icon class="text-muted">location_on</mat-icon>
+                        
+                                </p>
+                            -->
+                            </div>
+                            
+                            <div fxLayout="column" fxLayoutAlign.xs="center center" class="mx-3">                      
+                                <h1 class="price" >{{property.price | number}}<span> <span>&nbsp;</span></span>{{property.currency}}</h1>
+                            </div>
+ 
+                                                            
+                        </mat-card>
+                        <br>
+                      
+                        <mat-card [perfectScrollbar]="psConfig"> 
+                            <div fxLayout="row wrap" class="details" style="width:100%" >
+
+                                <pre *ngIf="settings.languageto == 'ar'" ><h5 style="font-weight: bold;text-align: justify;white-space: pre-wrap;">{{property?.descrAr}}</h5></pre>
+                                <pre *ngIf="settings.languageto == 'en'"><h5 style="font-weight: bold;text-align: justify;white-space: pre-wrap;">{{property?.descrEn}}</h5></pre>
+                                <pre *ngIf="settings.languageto == 'tr'"><h5 style="font-weight: bold;text-align: justify;white-space: pre-wrap;">{{property?.descrTr}}</h5></pre>
+                                <pre *ngIf="settings.languageto == 'fr'"><h5 style="font-weight: bold;text-align: justify;white-space: pre-wrap;">{{property?.descrFr}}</h5></pre>
+
+
+                             </div>
+           
+                        </mat-card>
+
+
+                    </div>
+                    <!-- نهاية ألقسم الايمن  -->
+                    <!--  ألقسم الأيسر  -->
+                    <div class="col-md-4">
+                        <mat-card [perfectScrollbar]="psConfig"> 
+                            <div fxLayout="row wrap" class="details uppercase">
+                                <span>E</span> <span>{{property.id}}</span><span> &nbsp;</span>
+                             </div>
+           
+                        </mat-card><br>
+                          <mat-card [perfectScrollbar]="psConfig"> 
+                            <div fxLayout="row wrap" class="details">
+                                <!-- data  -->
+                               
+                                   
+                                    <span *ngIf="settings.languageto == 'ar'">{{PropertyType?.arabicname }}</span>
+                                    <span *ngIf="settings.languageto == 'en'">{{PropertyType?.englishname }}</span>
+                                    <span *ngIf="settings.languageto == 'fr'">{{PropertyType?.frenchname }}</span>
+                                    <span *ngIf="settings.languageto == 'tr'">{{PropertyType?.turkishname }}</span>
+                                    <span>&nbsp;...</span>
+                                    <!-- property.type -->
+                                     <span>{{property.type | translate}}</span>
+                                     <span>&nbsp;...</span>
+                                      <!-- city -->
+                                    <span *ngIf="settings.languageto == 'ar'">{{city?.arabicname }}</span>
+                                    <span *ngIf="settings.languageto == 'en'">{{city?.englishname }}</span>
+                                    <span *ngIf="settings.languageto == 'fr'">{{city?.frenchname }}</span>
+                                    <span *ngIf="settings.languageto == 'tr'">{{city?.turkishname }}</span> 
+                                    <span>&nbsp;...</span>
+                                    <!-- region -->
+                                        <span *ngIf="settings.languageto == 'ar'">{{region?.arabicname }}</span>
+                                        <span *ngIf="settings.languageto == 'en'">{{region?.englishname }}</span>
+                                        <span *ngIf="settings.languageto == 'fr'">{{region?.frenchname }}</span>
+                                        <span *ngIf="settings.languageto == 'tr'">{{region?.turkishname }}</span> 
+                                  
+                             
+                                <!-- data end -->
+
+                             </div>
+           
+                        </mat-card>
+                        <br  *ngIf="property.blotArea != 0||property.buildArea != 0||property.nbrBedRooms != 0 || property.nbrBathroom != 0 ||property.nbrLivingroom != 0||property.nbrDinning != 0" >
+                        <mat-card [perfectScrollbar]="psConfig" *ngIf="property.blotArea != 0||property.buildArea != 0||property.nbrBedRooms != 0 || property.nbrBathroom != 0 ||property.nbrLivingroom != 0||property.nbrDinning != 0" > 
+                            <div fxLayout="row wrap" class="details">
+                                <div class="  flex-fill" *ngIf="property.nbrBedRooms != 0"><span><i class="fa fa-bed " aria-hidden="true"></i></span><span> &nbsp;</span> <span>{{property.nbrBedRooms}}</span><span> &nbsp;</span>{{'Bedrooms' | translate}}</div>
+                             </div>
+                             <div fxLayout="row wrap" class="details">
+                                <div class="  flex-fill" *ngIf="property.nbrBathroom != 0"><span><i class="fa fa-bath " aria-hidden="true"></i></span><span>&nbsp; </span> <span>{{property.nbrBathroom}}</span><span> &nbsp;</span>{{'Bathroom' | translate}}</div>
+                             </div>
+                             <div fxLayout="row wrap" class="details">
+                                <div class="  flex-fill" *ngIf="property.nbrLivingroom != 0"><span><i class="fas fa-couch"></i></span><span>&nbsp; </span> <span>{{property.nbrLivingroom}}</span><span> &nbsp;</span>{{'Livingroom' | translate}}</div>
+                             </div>
+                             <div fxLayout="row wrap" class="details">
+                                <div class="  flex-fill" *ngIf="property.nbrDinning != 0"><span><i class="fas fa-utensils"></i></span><span>&nbsp; </span> <span>{{property.nbrDinning}}</span><span> &nbsp;</span>{{'Dinning' | translate}}</div>
+                             </div>
+                             <div fxLayout="row wrap" class="details">
+
+                                <div class="  flex-fill" *ngIf="property.buildArea != 0"><span><i class="fa fa-building"></i></span><span>&nbsp; </span> <span>{{property.buildArea}}</span><span> &nbsp;</span>{{'buildArea' | translate}}</div>
+                             
+                             </div>
+                             <div fxLayout="row wrap" class="details">
+
+                                <div class="  flex-fill" *ngIf="property.blotArea != 0"><span><i class="fa fa-square-o"></i></span><span>&nbsp; </span> <span>{{property.blotArea}}</span><span> &nbsp;</span>{{'blotArea' | translate}}</div>
+                             </div>
+                             <div fxLayout="row wrap" class="details">
+
+                               
+                             </div>
+           
+                        </mat-card>
+                        <mat-card class="mt-3"> 
+                            <mat-card-content>
+                                <div class=" d-flex flex-row sochial text-center  " >
+                                    <div class="p-1"><a href="tel:{{property.phone}}"><i class="fa fa-phone " aria-hidden="true" ></i></a></div>
+                                    <div class="p-1"> <a href = "mailto:{{property.email}} "><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+                                    <div class="p-1" *ngIf="property.whatsapp < 1"> <a href="https://api.whatsapp.com/send?phone={{strValue}}&text={{newURL}}"  target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+                                    <div class="p-1" *ngIf="property.whatsapp > 1 "> <a href="https://api.whatsapp.com/send?phone={{strValue}}&text={{newURL}}"  target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></div>
+                                    <div class="p-1"> <a href="https://api.whatsapp.com/send?&text={{newURL}}"  target="_blank"><i class="fa fa-share-alt" aria-hidden="true"></i></a></div>
+                                </div> 
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="mt-3" *ngIf="company?.id >= 1"> 
+                            <mat-card-content>
+                                 <div class=" d-flex flex-row sochial text-center  " >
+                                    <a mat-raised-button routerLink="/company/{{company?.id}}"> <img [src]="company?.img" class="swiper-lazy example-image" style="width:100%;height:100%"></a> 
+                                 </div> 
+                            </mat-card-content>
+                        </mat-card>
+
+                        <!-- <mat-card class="mt-3"> 
+                       
+                            <mat-card-content *ngIf="lat > 1">
+                                {{lat}},{{lng}}
+                                                         <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q={{this.src}} +(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" >
+                            </iframe>
+                            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEVjMiW_AkBv8MwHlug2muV7uXeBJD_Z4&callback=initMap"></script>
+                                <agm-map [latitude]="lat" [longitude]="lng" [mapTypeControl]="true"  [fullscreenControl]="true"  [zoom]= "13">
+                                    <agm-marker [latitude]="lat" [longitude]="lng" [markerDraggable]="false"></agm-marker>
+                                </agm-map>
+                                <div  >{{this.lat}} </div>
+                                <iframe
+                                
+                                    width="600"
+                                    height="450"
+                                    style="border:0"
+                                    loading="lazy"
+                                    allowfullscreen
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCEVjMiW_AkBv8MwHlug2muV7uXeBJD_Z4
+                                        &q=25.259821243345474, 51.52393928206702">
+                                </iframe>
+                        
+                            </mat-card-content>                   
+                        </mat-card>  -->
+                        <br>
+                      
+                    </div>
+                    <!-- نهاية ألقسم الأيسر  -->
+                </div>
+
+                            
+
+
+        
+            </mat-sidenav-content>
+         
+        </mat-sidenav-container>
+
+    </div>
+</div>
+ <!--
+<div class="section mt-3">
+    <div class="px-3">
+        <div class="theme-container"> 
+            <h1 class="section-title">{{"Related properties" | translate}}</h1>            
+            <app-properties-carousel [properties]="relatedProperties"></app-properties-carousel>                        
+        </div>
+    </div>   
+</div> 
+-->
+
+<app-get-in-touch></app-get-in-touch>

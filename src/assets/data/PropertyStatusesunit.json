@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nameen": "SALE",
+        "namear": "للبيع",
+        "nametr": "SALE",
+        "namefr": "SALE"
+  
+    },
+    {
+        "id": 2,
+        "nameen": "RENT",
+        "namear": "للإيجار",
+        "nametr": "SALE",
+        "namefr": "SALE"
+  
+    }
+
+   
+ ]

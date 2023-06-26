@@ -1,0 +1,26 @@
+{
+   "page": 
+   [
+    "about",
+    "account":["dashboard","edit-property","favorites","my-properties","profile"] ,
+    "agents":["agent"] ,
+    "compare","contact","faq",
+    "home":["featured-properties","hot-offer-today"] ,
+    "landing","lock-screen","login","not-found",
+    "pricing":["monthly","yearly"] ,
+    "properties":["property","show"] ,
+    "register","submit-property","terms-conditions"
+   ],
+   "shared": 
+  [
+    "alert-dialog","clients","comments","compare-overview","confirm-dialog","dialog-header-controls","get-in-touch",
+    "header-carousel","header-image","header-map","header-video","load-more","logo","mission","our-agents","our-services",
+    "properties-carousel","properties-search","properties-search-results-filters","properties-toolbar","property-item","rating","testimonials"
+  ],
+   "theme": 
+   [
+    "components":["contacts","countries","currency","footer","lang","menu":["horizontal-menu","vertical-menu"],"social-icons","toolbar1","toolbar2","user-menu"] ,
+    ,"directives","pipes"
+   ],
+
+}

@@ -1,0 +1,185 @@
+/* You can add global styles to this file, and also import other style files */
+body,p,a,li,ul,h1,h2,h3,h4,h5,h6{
+  // y
+  
+  // font-family: 'Montserrat'!important;
+  font-family: 'Tajawal'!important; 
+  font-size: 18px;
+  }
+  h1{font-weight: bold!important;}
+  h1 a{font-weight: bold;color:#000;text-decoration: none!important;}
+  .adress{font-size:18px;font-weight:bold;color:#59a4da;padding:3px 3px}
+
+  /* sochial media */
+.btn-color{color:#DA972E;font-weight:bold;font-size:18px;}
+.sochial .fa-facebook{background-color: #3b5998;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-facebook:hover{background-color: #fff;color:#3b5998;padding: 5px 10px;}
+
+.sochial .fa-twitter{background-color: #3156a5;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-twitter:hover{background-color: #fff;color:#8b9dc3;padding: 5px 10px;}
+
+.sochial .fa-instagram{background-color: #8a3ab9;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-instagram:hover{background-color: #fff;color:#8a3ab9;padding: 5px 10px;}
+
+.sochial .fa-youtube{background-color: #FF0000;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-youtube:hover{background-color: #fff;color:#FF0000;padding: 5px 10px;}
+
+.sochial .fa-linkedin{background-color: #0072b1;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-linkedin:hover{background-color: #fff;color:#0072b1;padding: 5px 10px;}
+
+.sochial .fa-whatsapp{background-color: #25d366;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-whatsapp:hover{background-color: #fff;color:#25d366;padding: 5px 10px;}
+
+.sochial .fa-share-alt{background-color: #25d366;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-share-alt:hover{background-color: #fff;color:#25d366;padding: 5px 10px;}
+.sochial .fa-envelope{background-color: #c71610d5;color:#fff;padding: 5px 10px;border-radius: 5px 5px; font-size: xx-large;}
+.sochial .fa-envelope:hover{background-color: #fff;color:#c71610d5;padding: 5px 10px;}
+
+.sochial .fa-phone{background-color: #08851bbe;color:#fff;padding: 5px 10px;border-radius: 5px 5px;font-size: xx-large;}
+.sochial .fa-phone:hover{background-color: #fff;color:#08851bbe;padding: 5px 10px;}
+/* sochial media end */
+/* social */
+
+a.social_bt {
+  border-radius: 3px;
+  color: #fff;
+  min-width: 200px;
+  display: block;
+  padding: 12px;
+  line-height: 1;
+  position: relative;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+a.social_bt.facebook {
+  background-color: #3B5998;
+}
+
+a.social_bt.google {
+  background-color: #DC4E41;
+}
+
+a.social_bt.linkedin {
+  background-color: #0077B5;
+}
+
+.add_bottom_15,
+a.social_bt {
+  margin-bottom: 15px;
+}
+
+a.social_bt {
+  text-align: center;
+  text-decoration: none;
+}
+
+a.social_bt.facebook:before {
+  content: "\f09a";
+}
+
+a.social_bt.google:before {
+  content: "\f0d5";
+  top: 12px;
+}
+
+a.social_bt.linkedin:before {
+  content: "\f0e1";
+}
+
+a.social_bt.facebook:before,
+a.social_bt.google:before,
+a.social_bt.linkedin:before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+.inner-pages .agent-content .netsocials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.inner-pages .agent-content .netsocials .fa {
+  font-size: 1rem;
+  text-align: center;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-right: 1.5rem;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.inner-pages .agent-content .netsocials a .fa-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+.inner-pages .agent-content .netsocials a .fa-facebook:hover {
+  background: #3b5998;
+  color: #fff;
+}
+
+.inner-pages .agent-content .netsocials a .fa-twitter {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.inner-pages .agent-content .netsocials a .fa-twitter:hover {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.inner-pages .agent-content .netsocials a .fa-google-plus {
+  background: #dd4b39;
+  color: #fff;
+}
+
+.agent-content .netsocials a .fa-google-plus:hover {
+  background: #dd4b39;
+  color: #fff;
+}
+
+.inner-pages .agent-content .netsocials a .fa-youtube {
+  background: #cd201f;
+  color: #fff;
+}
+
+.inner-pages .agent-content .netsocials a .fa-youtube:hover {
+  background: #cd201f;
+  color: #fff;
+}
+/* social end */
+
+
+
+
+
+// @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&family=Noto+Sans+Arabic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
+@import "app/theme/styles/spinner";
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import '~swiper/swiper-bundle.min.css';
+@import '~snazzy-info-window/dist/snazzy-info-window.css'; 
+
+@import "app/theme/styles/base";
+@import "app/theme/styles/spaces";
+@import "app/theme/styles/theme";
+@import "app/theme/styles/rtl";
+
+

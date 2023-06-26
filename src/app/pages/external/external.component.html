@@ -1,0 +1,46 @@
+<title *ngIf="settings.languageto == 'en'" >aqarco for real estate e-marketing</title>
+<title  *ngIf="settings.languageto == 'ar'"  > عقاركو تسويق الكتروني للعقارات</title>
+<title  *ngIf="settings.languageto == 'tr'"  >aqarco emlak e-pazarlama için</title>
+<title  *ngIf="settings.languageto == 'fr'"  >aqarco for real estate e-marketing</title>
+<app-header-image [backgroundImage]="'assets/images/carousel/slide-3.jpg'" 
+                  [bgImageAnimate]="false" 
+                  [contentOffsetToTop]="false" 
+                  [desc]="'“Home is where one starts from...” –T.S. Eliot'"
+                  [contentMinHeight]="200">
+        
+</app-header-image>
+
+<div id="popup_container" >    
+    <div id="poup-inter" >
+   
+   <!-- language end -->
+   <!-- country -->
+       <button mat-button [matMenuTriggerFor]="country" #langMenuTrigger="matMenuTrigger" class="lang-btn">
+          <img *ngIf="settings.languageto == 'en' || settings.languageto == 'ar' || settings.languageto == 'tr' || settings.languageto == 'fr'" [src]="ContryName.flag" width="50" class="mat-elevation-z1">
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'en'">{{ContryName.nameenglish}}</span>
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'ar'">{{ContryName.namearabic}}</span>
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'tr'">{{ContryName.nameturkish}}</span>
+           <span fxShow="false" fxShow.gt-md class="uppercase flag-name" *ngIf="settings.languageto == 'fr'">{{ContryName.namefrench}}</span>
+          
+       </button>
+       <div class="row app-menu-panel lang" style="width: 100%;">
+         
+          
+             
+          <div class="col-md-3 col-sm-6 col-lg-3 col-6" *ngFor="let country of countries" >
+               <button  mat-menu-item (click)="changeCountry(country.id,country.defaultregion)"  style="text-align: center">  
+                 
+                  <img [src]="country.flag" width="18" [alt]="country.nameenglish" class="mat-elevation-z1"> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'ar'">{{country.namearabic}}</span> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'en'">{{country.nameenglish}}</span> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'tr'">{{country.nameturkish}}</span> 
+                   <span class="flag-name" *ngIf="settings.languageto == 'fr'">{{country.namefrench}}</span> 
+               </button> 
+           </div>   
+      
+           
+       </div>
+       
+   
+    </div>
+   </div>  

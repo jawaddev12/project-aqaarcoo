@@ -1,0 +1,230 @@
+{
+  "Articles":"مدونة",
+  "PRIVACY POLIC":"",
+  "Terms & Conditions":"البنود والشروط",
+
+  "contact":{
+"ADDRESS":"العنوان",
+"PHONES":"التلفون",
+"E-MAIL":"البريد"
+  },
+  "aboutus":{
+  "topadress":"شراء وبيع العقارات ",
+  "our story":"من نحن",
+  "Vision":"رؤيتنا",
+  "About Company":"حول الشركة"
+  },
+  "has been added to favorites":"تمت اضافتها الى المفضلة",
+  "Filter properties":"فرز العقارات",
+  "Title":"عنوان",
+  "Remove":"ازالة",
+  "Image":"صورة",
+  "ID":"الرقم المرجعي",
+  "No data available":"لا يوجد بيانات",
+"Show":"اظهار",
+"Sort by Default":"فرز افتراضي",
+"Newest":"الأحدث",
+"Oldest":"الأقدم",
+"Price (Low to High)":"السعر من الأدنى الى الأعلى",
+"Price (High to Low)":"السعر من الأعلى الى الأسفل",
+ 
+  "Property": {  
+    "Features":"الميزات",
+  "Year Built":"عمر البناء",
+  "Property size":"مساحة العقار",
+  "Bedrooms":"غرف النوم",
+  "Bathrooms":"الحمام",
+  "Garages":" موقف سيارة",
+  "Details":"تفاصيل",
+  "close":"اغلاق",
+  "City":"المدينة",
+  "Zip Code":"الرمز البريدي",
+  "Street":"الشارع",
+  "Neighborhood":"المنطقة"
+ 
+},
+"search":{
+"Select City":"اختر المدينة",
+"Select Neighborhood":"اختر المنطقة"
+},
+
+"Header":{
+"titleheader":" شراء وبيع العقارات ",
+"descheaer":"عقاركو شركة تسويق عقاري ",
+"Favorites":"المفضلة",
+"Compare list":"القائمة",
+"call":"اتصل",
+"mail":"البريد",
+"location_on":"الموقع"
+
+},
+"Mission":{
+"Our Mission":"مهامنا",
+"save money":"توفير المال",
+"better ideas":"أفكار أفضل",
+"Easy To Find":"سهولة الإيجاد",
+"collaboration":"التعاون",
+"":""
+},
+"SERVICES":
+{
+"Our Services":"خدماتنا",
+"Find places":"ايجاد العقارات في اي مكان",
+"experience":"لدينا وكلاء من ذوي الخبرة",
+"Buy":"شراء أو استئجار العقارات الجميلة",
+"list properties":"مع حساب الوكيل ، يمكنك سرد العقارات"
+
+}
+,
+"Footer":{
+  "LOCATION":"موقعنا",
+  "place":"السلطة الجديدة"
+  },
+"month":" الشهر",
+  "found":"عدد العقارات",
+  "results":"النتائج",
+  "Load More":"تحميل المزيد",
+    "Gym": "نادي رياضي", 
+    "Swimming Pool": "مسبح", 
+    "WiFi": "انترنت وايفي", 
+    "Sauna": "سونا",
+    "TV Cable": "كبل تلفزيون", 
+    "Refrigerator": "ثلاجة",
+    "Microwave": "الميكروويف",
+    "Dryer": "مجفف",
+    "Barbeque": "شواء", 
+    "Air Conditioning": "تكييف",
+    "Fireplace":"مدفئة",
+    "Additional features":"ميزات أخرى",
+ "Related properties":"عقارات مشابهة",
+ "CALL US NOW":"إتصل بنا الأن",
+ "LOOKING TO SELL YOUR HOME?":" ترغب في بيع منزلك؟",
+ "Connect with us":"نحن جاهزين للمساعدة دائما",
+
+  "Property status":" اختر فئة العقار",
+  "Property Price":"سعر العقار",
+  "Select Property Status":" اختر فئة العقار",
+    "Select Property Type":"اختر نوع العقار",
+    "Property Type":"نوع العقار",
+    "SALE":" للبيع",
+    "RENT":"للإيجار",
+    "Wanted":"مطلوب",
+    "ASK":"مطلوب",
+    "YACHTS":"يخوت",
+    "dailyrent":"إيجار يومي",
+    "Office":"مكتب",
+    "To":"إلى",
+    "From":"من",
+
+
+
+
+  "MENU": "القائمة",
+  "MY_PROPERTIES": "عقاراتي",
+  "FAVORITES": "مفضل",
+  "COMPARE": "مقارنة",
+
+
+  "HELP": "مساعدة",
+  "NAV": {  
+    "HOME": "الرئيسية", 
+    "PROPERTIES": "عقارات", 
+    "PAGES": "الصفحات", 
+    "AGENTS": "عملاء",
+
+    "PRICING": "السعر",
+    "TERMS_CONDITIONS": "شروط & وخصائص",
+    "TERMS": "شروط & وخصائص",
+    "LANDING": "تحميل", 
+    "404_PAGE": "صفحة خطأ",
+    "OTHERS": "أخرى",
+    "EXTERNAL_LINK": "رابط خارجي",
+    "MENU_ITEM": "Menu Item",
+    "CONTACT": "أتصل بنا",
+    "ABOUT_US": "من نحن",
+    "ADMIN": "المدير"
+  }, 
+  "BTN": {
+    "ADD": "اضافة",
+    "SAVE": "حفظ",
+    "SUBMIT": "ارسال",
+    "CANCEL": "إلغاء",
+    "UPLOAD": "تحميل",
+    "REMOVE": "إزالة",
+    "YES": "نعم",
+    "NO": "غير موافق",
+    "OK": "موافق",
+    "CLEAR": "مسح",
+    "ADVANCED": "بحث متقدم",
+    "HIDE": "ابحث"
+  },
+
+  
+
+  "Next":"التالي",
+  "Previous":"السابق",
+  "Navbar":"عقاركو",
+   
+    "home": "الرئيسية",
+    "Contact-Us": "اتصل بنا",
+    "About-Us": "من نحن",
+    "Sale": "بيع",
+    "Rent": "أجار",
+
+    "searchof": "بحث",
+    "Select-search": "أدخل اسم مدينة أو منطقة أو كلمة مفتاحية",
+    "Property_kind": "عقارات بيع",
+    "Properties": "عقارات",
+   
+  
+    "Region": "المنطقة",
+
+    "Advanced Search": "بحث متقدم",
+    "Quick Search": "بحث سريع",
+    "Bedrooms": "غرف النوم",
+    "Bedrooms From": " غرف النوم من",
+        "Bathroom": "الحمام",
+        "Livingroom":"صالون",
+        "Dinning":"غرفة طعام",
+        "buildArea":"مساحة البناء",
+        "blotArea":"مساحة الأرض",
+        "Price from": "السعر من",
+        "Price to": "السعر الى",
+        "Price" :"السعر",
+        "Kind": "النوع",
+   
+       
+        "Description": "وصف العقار",
+        "Property Details": "تفاصيل العقار",
+        "Gallery": "صور العقار",
+        "Location": "موقع العقار",
+        "Similar Properties": "عقارات مشابهة",
+        "Property ID:": "الرقم المرجعي:",
+      
+        "Name":"الأسم",
+        "telphon":"التلفون",
+        "Email":"البريد  الإلكتروني",
+        "Message":"الرسالة",
+        "Submit":"ارسال",
+        "Contact Details":"تفاصيل الإتصال",
+      
+        "Map":"الموقع",
+        "external":"خارجي",
+        "privacy-policy":"سياسة الخصوصية",
+  
+        "Aqars-for-Rent":"عقارات للإيجار",
+        "Apartment-for-Rent":"شقة للإيجار في ",
+        "Villa-or-Rent":"فيلا للإيجار في",
+        "Offices-for-Rent":"مكتب للإيجار في",
+
+        "Aqars-for-Sale":"عقارات للبيع",
+        "Apartment-for-Sale":"شقة للبيع في ",
+        "Villa-for-Sale":"فيلا للبيع في ",
+        "Offices-for-Sale":"مكتب للبيع في",
+
+        "Most-popular-Searched":"الأكثر بحثا",
+        "Download-our-App":"حمل التطبيقات"
+
+
+
+}

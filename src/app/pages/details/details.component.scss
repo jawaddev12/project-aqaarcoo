@@ -1,0 +1,139 @@
+.main-carousel{ 
+    .swiper-slide{              
+        text-align: center;
+        padding-bottom: 66.25%;
+        position: relative;
+        overflow: hidden;  
+        background: rgba(0, 0, 0, 0.04);         
+    }
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    } 
+    .control-icons{ 
+        position: absolute;
+        z-index: 2; 
+        top: 24px;
+        right: 20px;
+        button.mat-button{
+            min-width: 36px;
+            width: 36px;
+            padding: 0;
+            margin: 0 4px;
+            background: rgba(255, 252, 252, 0.6);
+            transition: 0.2s; 
+            color:rgba(0, 0, 0, 0.87);
+            &:disabled{
+                color: rgba(0, 0, 0, 0.26); 
+            }
+            &:hover:enabled{
+                background: rgba(255, 252, 252, 1);
+            }             
+        }
+    }
+}
+
+.small-carousel{ 
+    .swiper-slide{  
+        img{
+            display: block;
+            opacity: 0.3;
+        }
+        &.active-thumb{
+            img{ 
+                border-width: 3px;
+                border-style: solid;
+                box-sizing: border-box;
+                opacity: 1;
+            }           
+        } 
+        .swiper-lazy-preloader{
+            margin-top: 10px;
+        }        
+    } 
+}
+ 
+.widget{ 
+    margin-bottom: 40px;
+    .widget-title{
+        margin: 0 -16px 16px;
+        padding: 8px 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    &:first-child{  
+        .widget-title{
+            margin: -16px -16px 16px;
+            padding: 8px 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    } 
+} 
+.uppercase{font-size: 26px;font-weight: bold;}
+.price{font-weight: bold;color:#59a4da;font-size: 26px;}
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 100%;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .popup{
+    background-color: #59a4da;
+    position:absolute;
+    top: 300;
+    left: 300;
+}
+body{
+    text-align: center;  
+}
+#popup_container{
+    display:inline;
+    width :100%;   
+    height : 100%;   
+   background : rgba(59, 26, 136, 0.8);   
+   position : fixed;      
+top : 0;       
+z-index : 500;    
+}
+#poup-inter{
+    display:inline;
+    width :100%;   
+    
+   background :#fff;   
+   position : fixed;      
+   color:#000;
+   text-align:center;
+  padding: 10px 10px;
+   
+z-index : 500;     
+}
+#popup{      
+    background : white;      
+    width : 400px;      
+    height : 300px;      
+    margin : 150px auto;      
+    } 
+    .lang-btn{
+        font-size:24px;
+
+    }
+    .flag-name{font-size: 24px;}
+    .btn-color{font-size: 22px;}
+    .aqarco-up{text-decoration: none;background-color: #535790;font-weight: bold;color: #fff;padding: 10px;border-radius: 5px 5px;}
