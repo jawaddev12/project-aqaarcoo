@@ -5,5 +5,5 @@ const fs = require("fs-extra");
     const copy = ".netlify/functions/dist";
 
     await fs.remove(copy);
-    await fs.copy(src, copy);
+    await fs.copy(src, copy)
 })
