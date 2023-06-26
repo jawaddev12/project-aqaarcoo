@@ -1,0 +1,3 @@
+[build]
+ command = "npm run build:ssr && npm run copy:files"
+ functions = "netlify/functions/"

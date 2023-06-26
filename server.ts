@@ -3,7 +3,7 @@ import 'zone.js/node';
 const domino = require('domino');
 const fs = require('fs');
 const path = require('path');
-const template = fs.readFileSync(path.join(process.cwd(), 'dist/functions/browser/index.html')).toString();
+const template = fs.readFileSync(path.join(process.cwd(), 'dist/browser/index.html')).toString();
 const win = domino.createWindow(template);
 global['window'] = win;
 Object.defineProperty(win.document.body.style, 'transform', {
@@ -30,8 +30,7 @@ import { environment } from 'src/environments/environment';
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const webFilePath = environment.production ? "browser" : "dist/functions/browser";
-  const distFolder = join(process.cwd(), webFilePath);
+  const distFolder = join(process.cwd(), "dist/browser");
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
