@@ -370,7 +370,9 @@ goto():void{
 }
 
   ngOnInit() {
+    if(!this.isServer){
     this.firsttimetodetails=window.localStorage.getItem('first');
+    }
     // console.log('this.firsttimetodetails' + this.firsttimetodetails);
      this.title.setTitle(this.property.titleEn)
     // this.title.setTitle('sadsad')
